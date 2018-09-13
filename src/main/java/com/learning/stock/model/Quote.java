@@ -11,7 +11,6 @@ public class Quote implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Integer id;
-
     @Column(name="username")
     private String userName;
 

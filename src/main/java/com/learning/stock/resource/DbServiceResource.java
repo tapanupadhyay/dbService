@@ -23,7 +23,6 @@ public class DbServiceResource {
 
     @RequestMapping(value = "/{userName}", method = RequestMethod.GET, produces = "application/json")
     public List<String> getQuotesByUserName(@PathVariable("userName") final String userName){
-
        return quoteRepository.findByUserName(userName)
         .stream()
         .map(Quote::getQuote)
